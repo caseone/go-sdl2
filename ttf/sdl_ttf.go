@@ -78,11 +78,11 @@ func SetError(err string) {
 // ByteSwappedUnicode tells SDL_ttf whether UNICODE (Uint16 per character) text is generally byteswapped.
 // (https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf_20.html)
 func ByteSwappedUnicode(swap bool) {
-	val := 0
-	if swap {
-		val = 1
-	}
-	C.TTF_ByteSwappedUNICODE(C._Bool(val))
+	// val := 0
+	// if swap {
+	// 	val = 1
+	// }
+	C.TTF_ByteSwappedUNICODE(C._Bool(swap))
 }
 
 // OpenFont loads file for use as a font, at the specified size. This is actually OpenFontIndex(file, size, 0). This can load TTF and FON files.
