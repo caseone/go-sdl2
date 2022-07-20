@@ -7,9 +7,12 @@ package ttf
 //    TTF_SetError("%s", str);
 //}
 import "C"
-import "github.com/caseone/go-sdl2/sdl"
-import "unsafe"
-import "errors"
+import (
+	"errors"
+	"unsafe"
+
+	"github.com/caseone/go-sdl2/sdl"
+)
 
 // Hinting settings.
 const (
@@ -79,7 +82,7 @@ func ByteSwappedUnicode(swap bool) {
 	if swap {
 		val = 1
 	}
-	C.TTF_ByteSwappedUNICODE(C.boolean(val))
+	C.TTF_ByteSwappedUNICODE(C._Bool(val))
 }
 
 // OpenFont loads file for use as a font, at the specified size. This is actually OpenFontIndex(file, size, 0). This can load TTF and FON files.
