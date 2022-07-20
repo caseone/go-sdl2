@@ -104,7 +104,7 @@ const (
 	HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN = C.SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN // specifies whether the window frame and title bar are interactive when the cursor is hidden
 	HINT_WINDOWS_ENABLE_MESSAGELOOP              = C.SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP              // specifies whether the windows message loop is processed by SDL
 	HINT_WINDOWS_NO_CLOSE_ON_ALT_F4              = C.SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4              // specifies that SDL should not to generate WINDOWEVENT_CLOSE events for Alt+F4 on Microsoft Windows
-	HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH         = C.SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH         // specifies a variable to control whether mouse and touch events are to be treated together or separately
+	// HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH         = C.SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH         // specifies a variable to control whether mouse and touch events are to be treated together or separately
 	HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION  = C.SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION  // specifies the Android APK expansion main file version
 	HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION = C.SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION // specifies the Android APK expansion patch file version
 	HINT_AUDIO_RESAMPLING_MODE                    = C.SDL_HINT_AUDIO_RESAMPLING_MODE                    // specifies a variable controlling speed/quality tradeoff of audio resampling
