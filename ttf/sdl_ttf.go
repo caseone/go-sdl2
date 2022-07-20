@@ -79,7 +79,7 @@ func ByteSwappedUnicode(swap bool) {
 	if swap {
 		val = 1
 	}
-	C.TTF_ByteSwappedUNICODE(C.int(val))
+	C.TTF_ByteSwappedUNICODE(C.boolean(val))
 }
 
 // OpenFont loads file for use as a font, at the specified size. This is actually OpenFontIndex(file, size, 0). This can load TTF and FON files.
